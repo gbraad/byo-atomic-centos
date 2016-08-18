@@ -8,9 +8,9 @@
       repo=https://github.com/CentOS/sig-atomic-buildscripts
       version=downstream
       depth=1
-      dest=/home/working/centos-atomic
+      dest=/workspace/centos-atomic
 
   - name: Compose CentOS-Atomic tree
     command: >-
-      chdir=/home/working/centos-atomic/
+      chdir=/workspace/centos-atomic/
       rpm-ostree compose tree --repo=/srv/repo ./centos-atomic-host.json
